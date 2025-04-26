@@ -152,4 +152,6 @@ water_insecurity_2022 <- get_census_data(
   mutate(
     percent_lacking_plumbing = (plumbing / total_pop) * 100
   )
+summary(lm(percent_lacking_plumbing ~ ., data = water_insecurity_2023
 ```
+
