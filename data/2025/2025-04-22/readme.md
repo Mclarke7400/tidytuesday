@@ -235,4 +235,6 @@ daily_accidents_420_time <- all_accidents |>
   dplyr::filter(.data$year > 1991) |> 
   dplyr::summarize(fatalities_count = dplyr::n(), .by = c("date", "d420"))
 
+summary(lm(e420 ~. , data = daily_accidents_420)
+summary(lm(d420 ~., data = daily_accidents) 
 ```
